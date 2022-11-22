@@ -41,3 +41,10 @@ h2 {
   height: 30vh;
   border-radius: 50%;
 }
+
+footer {
+  background-color: grey;
+  color: white;
+  /* text-align: center; */
+  padding: 10px;
+}
