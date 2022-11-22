@@ -8,8 +8,28 @@ body {
   width: 100%;
   background-color: aqua;
   padding: 0;
+  margin: 0;
 }
 
 .centered-text {
   text-align: center;
+}
+
+.members {
+  display: grid;
+  width: 100%;
+  background-color: pink;
+}
+
+.member {
+  width: 20%;
+  height: 20%;
+  background-color: brown;
+}
+
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
 }
