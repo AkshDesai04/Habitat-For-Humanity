@@ -25,6 +25,8 @@ body {
   width: 20%;
   height: 20%;
   background-color: brown;
+  border: 5;
+  border-color: black;
 }
 
 h1 {
@@ -32,4 +34,10 @@ h1 {
 }
 h2 {
   margin: 0;
+}
+
+.pfp {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
 }
