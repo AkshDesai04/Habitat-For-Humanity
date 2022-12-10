@@ -1,83 +1,115 @@
 body {
 	margin: 0;
 	padding: 0;
-}
-
-* {
+	/* change the background color to a dark grey */
+	background: #222222;
+  }
+  
+  * {
 	box-sizing: border-box;
-}
-
-.full-page {
+	font-family: 'Lato', sans-serif;
+  }
+  
+  .full-page {
 	height: 100vh;
 	width: 100%;
-	background-color: aqua;
 	padding: 0;
 	margin: 0;
-}
 
-.centered-text {
+	/* here */
+	background: radial-gradient(circle, rgba(123, 215, 254, 1) 0%, rgba(213, 154, 238, 1) 100%);
+
+  }
+  
+  .centered-text {
 	text-align: center;
-}
-
-.members {
+  }
+  
+  .members {
 	display: grid;
 	place-items: center;
 	grid-template-columns: repeat(1, 1fr);
 	width: 100%;
-	background-color: pink;
+	/* change the background color to a dark grey */
+	background: #222222;
 	gap: 1rem;
-}
-
-@media screen and (min-width: 628px) {
+  }
+  
+  @media screen and (min-width: 628px) {
 	.members {
-		grid-template-columns: repeat(2, 1fr);
+	  grid-template-columns: repeat(2, 1fr);
 	}
-}
-
-@media screen and (min-width: 1028px) {
+  }
+  
+  @media screen and (min-width: 1028px) {
 	.members {
-		grid-template-columns: repeat(3, 1fr);
+	  grid-template-columns: repeat(3, 1fr);
 	}
-}
-
-.member {
+  }
+  
+  .member {
 	max-width: fit-content;
 	padding: 1em;
-	background-color: brown;
-	border: 1px solid black;
+	/* change the background color to a dark grey */
+	background: #222222;
 	border-radius: 1.75em;
 	position: relative;
-}
-
-h1 {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  h1 {
 	margin: 0;
-}
-h2 {
+	/* change the text color to white */
+	color: #ffffff;
+	font-weight: bold;
+  }
+  
+  h2 {
 	margin: 0;
-}
-
-.pfp {
+	/* change the text color to white */
+	color: #ffffff;
+	font-weight: lighter;
+  }
+  
+  .pfp {
 	width: 30vh;
 	height: 30vh;
 	border-radius: 50%;
-}
-
-footer {
-	background-color: grey;
-	color: white;
-	/* text-align: center; */
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  footer {
+	/* change the background color to a dark grey */
+	background: #222222;
+	/* change the text color to white */
+	color: #ffffff;
 	padding: 10px;
-}
- 
-.socials {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .socials {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	overflow: hidden;
 	padding: 0.5em;
-}
-
-.beside {
+  }
+  
+  .beside {
 	float: left;
 	margin: 0.25em;
-}
+  }
+
+  .centered-text--full-page {
+	/* set the text alignment to center */
+	text-align: center;
+	/* set the font size to a very large value */
+	font-size: 100vh * 0.75;
+	/* set the line height to match the height of the viewport */
+	line-height: 100vh;
+	/* prevent the text from overflowing the viewport */
+	overflow: hidden;
+	/* set the text color to white */
+	color: #ffffff;
+  }
+  
