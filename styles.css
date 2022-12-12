@@ -1,10 +1,9 @@
 body {
 	margin: 0;
 	padding: 0;
-	/* change the background color to a dark grey */
-	/* background: #222222; */
 	background: rgba(213, 154, 238, 255);
 	overflow-x: hidden;
+	background-color: #EB9AEE;
 }
 
 * {
@@ -17,15 +16,10 @@ body {
 	width: 100vw;
 	padding: 0;
 	margin: 0;
-
-	/* here */
-	background: radial-gradient(circle, rgba(123, 215, 254, 255) 0%, rgba(213, 154, 238, 255) 40%);
-
+	background: radial-gradient(circle, #A3D7FE 0%, #EB9AEE 40%);
 	display: grid;
 	place-items: center;
-
-
-	}
+}
 
 .centered-text {
 	text-align: center;
@@ -36,11 +30,7 @@ body {
 	place-items: center;
 	grid-template-columns: repeat(1, 1fr);
 	width: 100%;
-	/* change the background color to a dark grey */
-	/* background: #222222; */
-	/* background: rgba(0, 0, 0, 0.19); */
 	gap: 1rem;
-
 }
 
 @media screen and (min-width: 628px) {
@@ -58,29 +48,14 @@ body {
 .member {
 	max-width: fit-content;
 	padding: 1em;
-	/* change the background color to a dark grey */
-	/* background: #222222; */
 	border-radius: 1.75em;
 	position: relative;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	/* color: #222222; */
-	/* background-color: rgba(123, 215, 254, 10); */
-	/* background-color: rgb(213, 154, 238); */
-	/* background: rgb(213, 154, 238); */
-	/* background-color: #D59AEE; */
-
-}
-
-h1 {
-	margin: 0;
-	/* change the text color to white */
-	color: #ffffff;
-	font-weight: bold;
+	background-color: rgba(123, 215, 254, 0.75);
 }
 
 h2 {
 	margin: 2.5em;
-	/* change the text color to white */
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 2.5em;
@@ -102,21 +77,24 @@ p {
 }
 
 footer {
-	/* change the background color to a dark grey */
-	background: #222222;
-	/* change the text color to white */
-	color: #ffffff;
+	background: #A3D7FE;
 	padding: 10px;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	width: 100vw;
+	height: 15vh;
 }
 
 .socials {
-	position: absolute;
 	bottom: 0;
 	right: 0;
 	overflow: hidden;
-	padding: 0.5em;
+	background: #EB9AEE;
+	float: right;
+	height: 2em;
+	width: 2em;
+	border-radius: 5em;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	position: relative;
 }
 
 .beside {
@@ -125,21 +103,13 @@ footer {
 }
 
 .centered-text--full-page {
-	/* set the text alignment to center */
 	text-align: center;
-	/* set the font size to a very large value */
 	font-size: 7em;
-	/* set the line height to match the height of the viewport */
-	/* line-height: 100vh; */
-	/* prevent the text from overflowing the viewport */
 	overflow: hidden;
-	/* set the text color to white */
-	color: #ffffff;
 	word-wrap: normal;
+	margin: 0;
+	font-weight: bold;
 }
-
-
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -160,4 +130,15 @@ footer {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #eeeeee; 
+}
+
+.social-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.center-icon {
+	position: absolute;
+	top: 30%;
+	left: 25%;
 }
